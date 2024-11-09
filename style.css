@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4203a9, #90bafc);
+  color: #fff;
+  padding: 0.625rem;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 600px;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.calculator h1 {
+  font-size: 3.75rem;
+}
+
+.calculator h1 span {
+  color: #ffff76;
+}
+
+.input-box {
+  margin: 2.5rem 0;
+  padding: 2.5rem;
+  border-radius: 0.625rem;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+}
+
+.input-box input {
+  flex: 1;
+  margin-right: 1.25rem;
+  padding: 0.875rem 1.25rem;
+  border: none;
+  outline: none;
+  font-size: 1.25rem;
+  border-radius: 0.375rem;
+  position: relative;
+}
+
+.input-box input::-webkit-calendar-picker-indicator {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  position: absolute;
+  background-position: calc(100% - 10px);
+  background-size: 1.875rem;
+  cursor: pointer;
+}
+
+.input-box button {
+  background: #ffff76;
+  border: none;
+  outline: none;
+  padding: 1rem 1.875rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+
+#result {
+  font-size: 1.25rem;
+}
+
+#result span {
+  color: #ffff76;
+}
